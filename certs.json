@@ -2,7 +2,14 @@
     "$schema": "./certs.schema.json",
     "list": [
         {
-            "name": "Google Trust Services Root R1"
+            "name": "Google Trust Services Root R1",
+            "url": "https://i.pki.goog/r1.crt",
+            "fingerprint": "d9:47:43:2a:bd:e7:b7:fa:90:fc:2e:6b:59:10:1b:12:80:e0:e1:c7:e4:e4:0f:a3:c6:88:7f:ff:57:a7:f4:cf"
+        },
+        {
+            "name": "Google Trust Services Root R2",
+            "url": "https://i.pki.goog/r2.crt",
+            "fingerprint": "8d:25:cd:97:22:9d:bf:70:35:6b:da:4e:b3:cc:73:40:31:e2:4c:f0:0f:af:cf:d3:2d:c7:6e:b5:84:1c:7e:a8"
         }
     ]
 }
