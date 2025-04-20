@@ -35,7 +35,7 @@ jobs:
         with:
           file: './certs.json'
           schema: './certs.schema.json'
-          refSchemasMap: '{ "./cert.schema.json": "./cert.schema.json" }'
+          refSchemasArray: '[ "./cert.schema.json" ]'
 
       - name: Move Pages folder to root
         run: mv ./pages/* ./
