@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://wiiurootstore.coopeeo.xyz/cert.schema.json",
+    "title": "Certificate",
+    "description": "A certificate item",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "title": "Name of certificate",
+            "description": "This is where the name of the certificate goes.",
+            "$comment": "Even though it's mainly for note/annotation purposes, the name is required so you know what the certificate is in the case the URL is unreadable or just because it makes it better to learn overall."
+        },
+        "url": {
+            "type": "string",
+            "title": "Certificate URL",
+            "description": "Direct download link for the certificate. (no redirects unless 302 redirects duh)",
+            "pattern": "^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$"
+        },
+        "fingerprint": {
+            "type": "string",
+            "title": "Fingerprint",
+            "description": "SHA-256 fingerprint of certificate (not used right at the moment and don't know if it will actually be implemented)."
+        }
+    },
+    "required": [ "name", "url" ],
+    "additionalProperties": false
+}

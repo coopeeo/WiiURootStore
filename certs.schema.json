@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://wiiurootstore.coopeeo.xyz/certs.schema.json",
+    "$comment": "NOTE THIS IS FOR THE WHOLE LIST THE JUST THE ITEM LOOK AT cert.schema.json FOR THE CERTIFICATE ITEM SCHEMA",
+    "title": "Certificate List",
+    "description": "A list of cerificates",
+    "type": "object",
+    "properties": {
+        "list": {
+            "type": "array",
+            "title": "List of cerificate",
+            "description": "This array will contain certificates",
+            "items": { "$ref": "./cert.schema.json" }
+        }
+    },
+    "required": [ "list" ]
+}

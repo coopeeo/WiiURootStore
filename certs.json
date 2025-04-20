@@ -1,0 +1,8 @@
+{
+    "$schema": "./certs.schema.json",
+    "list": [
+        {
+            "name": "Google Trust Services Root R1"
+        }
+    ]
+}
